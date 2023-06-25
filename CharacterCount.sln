@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{4490BE42-736F-45B2-AC12-89D5D2A718C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{E958BC15-9BFC-48D2-851F-03060AF004BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Test", "Business.Test\Business.Test.csproj", "{4BEDCFA7-C290-4552-826B-3FDE67526808}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4490BE42-736F-45B2-AC12-89D5D2A718C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4490BE42-736F-45B2-AC12-89D5D2A718C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4490BE42-736F-45B2-AC12-89D5D2A718C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4490BE42-736F-45B2-AC12-89D5D2A718C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E958BC15-9BFC-48D2-851F-03060AF004BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E958BC15-9BFC-48D2-851F-03060AF004BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E958BC15-9BFC-48D2-851F-03060AF004BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E958BC15-9BFC-48D2-851F-03060AF004BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BEDCFA7-C290-4552-826B-3FDE67526808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEDCFA7-C290-4552-826B-3FDE67526808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEDCFA7-C290-4552-826B-3FDE67526808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEDCFA7-C290-4552-826B-3FDE67526808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09CCF31E-8290-44DF-816F-D7C3558C52FA}
+	EndGlobalSection
+EndGlobal
