@@ -4,7 +4,7 @@ namespace Business.IService
 {
     public interface ICharacterCount
     {
-        List<CharacterCountVm> GetCharcterCount(string input);
-        List<CharacterCountVm> GetCharacterCountByLinq(string input);
+        IList<CharacterCountVm> GetCharcterCount(string input);
+        IEnumerable<CharacterCountVm> GetCharacterCountByLinq(string input);
     }
 }

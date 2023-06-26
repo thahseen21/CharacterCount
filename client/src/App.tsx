@@ -1,24 +1,14 @@
 import { Flip, ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
+
+import CharacterResult from "./Components/CharacterResult";
 
 type CharacterCount = {
     key: string;
     count: number;
 };
-
-const RenderTableContent = (value: any) => {
-    return (
-        <tr>
-            <th>{value.value.key}</th>
-            <td>{value.value.count}</td>
-        </tr>
-    );
-};
-
-// To avoid re-rendering when parent component changes
-const RenderTableContentMemo = React.memo(RenderTableContent);
 
 function App() {
     const [characterCount, setCharacterCount] = useState<CharacterCount[]>([]);
@@ -56,7 +46,6 @@ function App() {
         } catch (error: any) {
             toast("Something went wrong! Contact Admin", { type: "warning" });
         }
-
     };
 
     const handleInputChange = (event: any) => {
@@ -75,24 +64,7 @@ function App() {
                 <input type="text" onChange={handleInputChange} />
                 <button onClick={fetchCharacterCount}>Get Count</button>
             </div>
-
-            {characterCount && characterCount.length > 0 && (
-                <div className="result-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Character</th>
-                                <th>Count</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {characterCount.map((x, index) => (
-                                <RenderTableContentMemo value={x} key={index} />
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            )}
+            <CharacterResult characterCount={characterCount} />
         </div>
     );
 }

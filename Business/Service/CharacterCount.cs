@@ -5,8 +5,7 @@ namespace Business.Service
 {
     public class CharacterCount : ICharacterCount
     {
-        // Performance O(n^2)
-        public List<CharacterCountVm> GetCharcterCount(string input)
+        public IList<CharacterCountVm> GetCharcterCount(string input)
         {
             var result = new List<CharacterCountVm>();
 
@@ -47,7 +46,7 @@ namespace Business.Service
             return result;
         }
 
-        public List<CharacterCountVm> GetCharacterCountByLinq(string input)
+        public IEnumerable<CharacterCountVm> GetCharacterCountByLinq(string input)
         {
             List<string> chars = new();
             chars.AddRange(input.Select(c => c.ToString()));
